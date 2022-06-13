@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+
 </head>
+
 <body>
-    <h1>Game is played in console mode. Click F12.</h1>
+    <div class="main-content">
+        <div class="container">
+            <div class="main-text">Rock-Paper-Scissors</div>
+            <div class="sub-text">Welcome to my first JS "project"!</div>
+        </div>
+    </div>
+
+    <div class="sub-content">
+
+        <div class="counter-section">
+            <div class="counters">
+                <div class="counter" id="1">
+                    My streak
+                </div>
+
+                <div class="counter" id="2">
+                    PC streak
+                </div>
+            </div>
+
+            <div class="draw-info">
+                <div class="draw-info-text">
+                    Placeholder.
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="boxes">
+            <div class="box">
+                <button class="rock">
+                    <img class="rock-img" src="images/rock.png" alt="Rock image">
+                </button>
+            </div>
+            <div class="box">
+                <button class="paper">
+                    <img class="paper-img" src="images/paper.png" alt="">
+                </button>
+            </div>
+            <div class="box">
+                <button class="scissors">
+                    <img class="scissors-img" src="images/scissors.png" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
