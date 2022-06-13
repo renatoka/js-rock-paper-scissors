@@ -3,6 +3,12 @@ let myArray = [
     'Paper',
     'Scissors'
 ];
+
+function testFunction(){
+    alert("Lesss goooo");
+}
+
+
 function playRound() {
 
     /* Only part of this game that I had to google for.
