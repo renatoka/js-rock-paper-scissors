@@ -4,10 +4,8 @@ let myArray = [
     'Scissors'
 ];
 
-function testFunction(){
-    alert("Lesss goooo");
-}
-
+let pcStreak = 0;
+let myStreak = 0;
 
 function playRound() {
 
@@ -24,10 +22,14 @@ function playRound() {
 
         else if (userGuess.toLowerCase() == 'scissors') {
             console.log(`You lost! You choose ${userGuess} while PC choose ${computerGuess}.`)
+            pcStreak++;
+            document.getElementById("2").innerHTML = `PC: ${pcStreak}`;
         }
 
         else {
             console.log(`You won! You choose ${userGuess} while PC choose ${computerGuess}.`)
+            myStreak++;
+            document.getElementById("1").innerHTML = `Me: ${myStreak}`;
         }
     }
 
@@ -39,10 +41,14 @@ function playRound() {
 
         else if (userGuess.toLowerCase() == 'scissors') {
             console.log(`You won! You choose ${userGuess} while PC choose ${computerGuess}.`)
+            myStreak++;
+            document.getElementById("1").innerHTML = `Me: ${myStreak}`;
         }
 
         else {
             console.log(`You lost! You choose ${userGuess} while PC choose ${computerGuess}.`)
+            pcStreak++;
+            document.getElementById("2").innerHTML = `PC: ${pcStreak}`;
         }
     }
 
@@ -50,6 +56,8 @@ function playRound() {
         if (userGuess.toLowerCase() == 'paper') {
 
             console.log(`You lost! You choose ${userGuess} while PC choose ${computerGuess}.`)
+            pcStreak++;
+            document.getElementById("2").innerHTML = `PC: ${pcStreak}`;
         }
 
         else if (userGuess.toLowerCase() == 'scissors') {
@@ -58,9 +66,11 @@ function playRound() {
 
         else {
             console.log(`You won! You choose ${userGuess} while PC choose ${computerGuess}.`)
+            myStreak++;
+            document.getElementById("1").innerHTML = `Me: ${myStreak}`;
+
         }
     }
-
 
 }
 

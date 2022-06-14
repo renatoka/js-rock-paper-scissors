@@ -28,17 +28,19 @@
         <div class="counter-section">
             <div class="counters">
                 <div class="counter" id="1">
-                    My streak
+                    Me: 0
                 </div>
 
                 <div class="counter" id="2">
-                    PC streak
+                    PC: 0
                 </div>
             </div>
 
             <div class="draw-info">
                 <div class="draw-info-text">
-                    Placeholder.
+                    <p id="55">
+                        Placeholder
+                    </p>
                 </div>
             </div>
 
@@ -47,19 +49,25 @@
 
         <div class="boxes">
             <div class="box">
-                <button class="rock">
+                <button class="rock" value="rock" id="myBtn">
                     <img class="rock-img" src="images/rock.png" alt="Rock image">
                 </button>
             </div>
             <div class="box">
-                <button class="paper">
-                    <img class="paper-img" src="images/paper.png" alt="">
+                <button class="paper" value="paper">
+                    <img class="paper-img" src="images/paper.png" alt="Paper image">
                 </button>
             </div>
             <div class="box">
-                <button class="scissors">
-                    <img class="scissors-img" src="images/scissors.png" alt="">
+                <button class="scissors" value="scissors">
+                    <img class="scissors-img" src="images/scissors.png" alt="Scissors image">
                 </button>
+            </div>
+        </div>
+
+        <div class="start-box">
+            <div class="start-button">
+                <button onclick="game()" class="start">Start</button>
             </div>
         </div>
     </div>

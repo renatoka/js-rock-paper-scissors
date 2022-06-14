@@ -54,3 +54,13 @@
     width: 150px;
     height: auto;
 }
+
+.start-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start {
+    font-size: 20px;
+}
