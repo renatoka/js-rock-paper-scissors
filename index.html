@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Rock-Paper-Scissors</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +39,7 @@
             <div class="draw-info">
                 <div class="draw-info-text">
                     <p id="55">
-                        Placeholder
+                        
                     </p>
                 </div>
             </div>
@@ -49,17 +49,17 @@
 
         <div class="boxes">
             <div class="box">
-                <button class="rock" value="rock" id="myBtn">
+                <button id="rock" class="button">
                     <img class="rock-img" src="images/rock.png" alt="Rock image">
                 </button>
             </div>
             <div class="box">
-                <button class="paper" value="paper">
+                <button id="paper" class="button">
                     <img class="paper-img" src="images/paper.png" alt="Paper image">
                 </button>
             </div>
             <div class="box">
-                <button class="scissors" value="scissors">
+                <button id="scissors" class="button">
                     <img class="scissors-img" src="images/scissors.png" alt="Scissors image">
                 </button>
             </div>
@@ -67,7 +67,7 @@
 
         <div class="start-box">
             <div class="start-button">
-                <button onclick="game()" class="start">Start</button>
+                <button class="start">Start</button>
             </div>
         </div>
     </div>
